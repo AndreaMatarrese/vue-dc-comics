@@ -1,28 +1,35 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+    <div>
+        <header-sito></header-sito>
+        <main-page></main-page>
+        <footer-page></footer-page>
+    </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import HeaderSito from './components/HeaderSito.vue';
+import MainPage from './components/MainPage.vue';
+import FooterPage from '@/components/FooterPage.vue'
 
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
+    components: {
+        HeaderSito,
+        MainPage,
+        FooterPage,
+    },
 }
-</script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+</script>
+<style lang="scss">
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&display=swap');
+@import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css';
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    html{
+        font-family: 'Oswald', sans-serif;
+
+    }
 </style>
